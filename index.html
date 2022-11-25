@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operates&Expressions</h1>
+
+    <h3> 1.Add two Numbers</h3>
+    <pre>
+    const AddTwoNumbers = (a,b) =>
+    {
+    return a+b
+    };
+     </pre>
+    <h3> 2.Find if the conditions are obeyed or not?</h3>
+    <pre>
+    const Is_Valid = (a,b) => 
+    {
+    return (a<10&&a>b)
+    };</pre>
+    <h3>3.Check the conditons</h3>
+    <pre>
+        const Check = (A, B) => 
+        {
+        if ((A%10==0) && (B%10==0))
+        return true 
+        else if((A%10!=0) && (B%10!=0))
+        return false 
+        else if ((A%10==0) || (B%10!=0))
+        return true 
+        else ((A%10!=0) || (B%10==0))
+        return true 
+        };
+    </pre>
+    <h3>4.Find the first digit of a 4 digit number</h3>
+    <pre>
+        const First_Digit = (n) => 
+        {
+        return parseInt(n/1000)   
+        };</pre>
+    <h3> 5.Find the last digit of a 4 digit number</h3>
+    <pre>
+        const Last_Digit = (n) => 
+        {
+        return (n%10)
+        };</pre>
+    <h3> 6.Find the remainder</h3>
+    <pre>
+        const Find_the_remainder = (a,b) =>
+        {
+       return (b%a)
+       };</pre>
+    <h3> 7.Multipy two Numbers</h3>
+    <pre>const Multiply_two_number = (a,b) => 
+        {
+        return a*b
+        };</pre>
+    <h3>8.Marks Calculator</h3>
+    <pre>const Sum = (A, B, C) => 
+        {
+        return (A+B+C)
+        };
+        const Average = (A, B, C) => 
+        {
+        return (A+B+C)/3
+        };</pre>
+        <hr> <br>
+
+
+        <h1>Decision Making</h1>
+        <h3>1.Calculator</h3>
+         
+        <pre>
+        const Calculator = (A, B, C) => 
+    {
+        if(A=="+"){
+         return B+C;
+       }
+       else if(A=="-"){
+         
+         return B-C;
+         
+       }
+        else if(A=="*")
+        {
+          return B*C;
+          
+        }
+        else{
+          return B/C;
+        }  
+        
+        
+        switch (A){
+            case '+':
+            return B+C;
+            case '-':
+            return B-C;
+            case '*':
+            return B*C
+            case '/':
+            return B/C;
+          }
+    };
+    </pre>
+    <h3>2.Check whether the conditions are fulfilled or not</h3>
+    <pre>
+        const Check_divisibility = (N) => {
+    
+            if (N%6==0 && N%9==0){
+              return "Divisible by both";
+            }
+            else{
+               return "Not Divisible by both";
+            }
+               
+           };
+           
+        </pre>
+        <h3>3.Eligible Voter</h3>
+        <pre>
+            const isEligible = (a) => {
+                if (a>=17){
+                return "Eligible for Voting";
+                }
+                else{
+                return "Not Eligible for Voting" ;
+                  
+                }
+              };
+              
+              
+        </pre>
+        <h3>4.Find Relation</h3>
+        <pre>
+            const findRelation = (x,y) => {
+                if(x<y){
+                    return x +" is smaller than " + y;
+                  } 
+                  else if(x>y){
+                    return x + " is greater than " + y;
+                  }
+                  else{
+                    return x + " is equal to " + y;
+                  }      
+              };
+              
+      
+           </pre>
+        
+          <h3>5.Find Grades</h3>
+          <pre>
+            const findGrades = (a) => {
+                if (a<=10){
+                  return "E";
+                }
+                else if (a>=11 && a<=20){
+                  return "D";
+                }
+                else if (a>=21 && a<=30 ){
+                  return "C";
+                }
+                else if (a>=31 && a<=40) {
+                  return "B";
+                }
+                else if (a>=41 && a<=50){
+                  return "A";
+                }
+            };
+            
+          </pre>
+        
+          <h3>6.Get Value</h3>
+          <pre>
+            const getValue = (a) => {
+                if (a=="P" || a=="p"){
+                  return "PrepBytes";
+                } 
+                
+                else if (a=="Z" || a=="z"){
+                  return "Zenith";
+                }
+                
+                else if (a=="E" || a=="e"){
+                  return "Expert Coder";
+                }
+                
+                else if (a=="D" || a=="d"){
+                  return "Data Structure";
+                }  
+              };
+              
+              
+          </pre>
+        
+          <h3>7.Find the maximum number out of three</h3>
+          <pre>
+          
+        const Max_out_of_three = (A,B,C) => {
+        
+            if(A==B && B==C){
+                return -1;
+               }
+               if(A>=B && A>=C){
+                 return A;
+               }
+               else if(B>=A && B>=C){
+                 return B;
+               }
+               else{
+                 return C;
+               }
+       };
+    
+       
+    </pre>
+    <h3>8.Second Smallest </h3>
+    
+    <pre>
+        const findSndSmallest = (x,y,z) => {
+            if (x < y && x < z){
+              if (y < z) {
+                return y;
+                
+              }
+              else{
+                return z;
+              }
+            }
+            if(y < x && y < z) {
+              if (x < z) {
+              return x;
+            }
+            else{
+              return z;
+            }
+        }
+            if(z < x && z< y){
+              if( x< y) {
+                return x;
+              }
+              else{
+                return y;
+              }
+            }     
+        };
+        
+        
+    </pre>
+    <h3>9.Check whether the triangle is Acute or Obtuse</h3>
+    <pre>
+        const Triangle_Check = (A,B,C) => {
+        if((A>90 && A<180) || (B>90 && B<180) || (C>90 && C<180))
+            {
+              return "obtuse";
+              
+            }
+            else{
+              return "acute";
+            }
+        };
+        
+        
+    </pre>
+    <hr>
+
+
+
+    <h1>Iteration Statement</h1>
+    <br>
+    <h3>1.Find the number of digits</h3>
+    <pre>
+    const Find_Digits = (N) => 
+{
+	let count=0;
+	while(N!=0){
+	  N=parseInt(N/10);
+	  count=count+1;
+	}
+	return count;
+};
+
+    </pre>
+    <h3>2.Find the fives</h3>
+    <pre>
+    const Find_Five = (N) => 
+{
+    let count=0;
+    while(N!=0){
+    r=N%10
+    if (r==5){
+    count=count+1;
+    }
+    N=parseInt(N/10);
+    }
+    return count;
+};
+    </pre>
+    <h3>3.Find the sum</h3>
+    <pre>
+    const findSum = (n) => {
+    let sum=0;
+    for (let i =1;i <= n;i++){
+    if (i%2==0){
+     sum=sum+i;
+    }                    
+    }
+    return sum; 
+    };
+          
+    </pre>
+    <h3>4.Find the sum of digits of a given number.</h3>
+    <pre>
+    const Number_Sum = (N) => 
+{
+	let sum=0;
+	while(N!=0){
+	r=(N%10);
+	sum=sum+r;
+	N=parseInt(N/10);
+	}
+	return sum;
+};
+
+    </pre>
+    <h3>5.Print the odds</h3>
+    <pre>const Print_Odd = (N) => 
+        {
+            console.log(2);
+            for(i=3; i<=N; i++){
+              if(i%2==1){
+                console.log(i)
+              }
+        };
+    </pre>
+    <h3>6.Print the pattern</h3>
+    <pre>
+    const Print_pattern = (N) => 
+{
+    for(r=1; r<=N; r++){
+        let star=" ";
+      for(c=1; c<=r; c++){
+        star = star+ " * ";
+      } 
+      console.log(star)
+      }
+};
+
+    </pre>
+    <h3>7.Check whether a Number is a prime or not.</h3>
+    <pre>
+const Prime_Check = (N) => 
+{
+let count=0;
+ for(let i=1; i<=N; i++;){
+  if(N%i=0){
+    count++;
+  }
+}
+if(count==2){
+return "Yes";
+}
+else{
+  return "No"
+}
+};
+
+    </pre>
+<h3>8.Print Numbers</h3>
+<pre>
+    const printNumbers = (n) => {
+    for(let i=1;i<=n;i++){
+    console.log(i);
+    }  
+};
+
+</pre>
+<h3>9.Print the Table</h3>
+<pre>
+    const Print_Table = (N) => 
+{
+	for(let i=1;i<=10;i++){
+
+        console.log(N+ " *  " + i + " = " + N*i);
+        }
+};
+</pre>
+<hr>
+
+
+
+
+<h1>Arrays</h1>
+<h4>1.Find the Product.</h4>
+ 
+<pre>
+const Find_Prod = (array, N) => 
+{
+
+let find_num=1;
+for(let i=0;i < N;i++) {
+find_num = find_num *array[ i];
+ 
+} 
+
+return find_num;
+ 
+};
+
+    
+</pre>
+<h4>2.Find the Sum</h4>
+    <pre>
+const Find_Sum = (array, N) => 
+{
+let sum=0;
+
+for(let i=0;i < N;i++) {
+ sum = sum + array [i] ;
+ 
+} 
+
+return sum;
+
+};
+       
+
+</pre>
+
+<h4>3.Count Occurrences</h4>
+<pre>
+const findCount = (N, K, Arr) => 
+{ 
+let count=0
+for(let i=0;i < N ;i++){
+if (Arr[i]==K){
+count=count+1;
+}
+}
+return count;
+}
+      
+</pre>
+
+<h4>4.Even Odd</h4>
+<pre>
+const findEvenOdd = (N, Arr) => 
+{
+let sumeven=0;
+let sumodd=0;
+for(let i=0;i < N;i++){
+if (Arr[i]%2==0){
+sumeven=sumeven+Arr[i];
+}
+else{
+sumodd=sumodd+Arr[i];
+}
+}
+return [sumeven,sumodd]; 
+};
+
+</pre>
+
+<h4>5.Find whether the number is present or not</h4>
+<pre>
+const Find_Num = (array,N,M) => 
+{
+for(let i=0;i< N;i++){
+if(array[i]==M){
+          
+    return "YES";
+          
+   }
+}
+    return "NO";
+};
+</pre>
+
+<h4>6.Higher Age</h4>
+<pre>
+const highAge = (N, Arr) => 
+{
+let B=[];
+let totalarr=0;
+for(let i=0;i< N;i++)
+{
+if(Arr[i]>=18){
+B.push(Arr[i]);
+}
+}
+return B;
+};
+</pre>
+
+<h4>7.Increment the Array Elements</h4>
+<pre>
+const Inc_Arr = (array,N) => 
+{
+let B=[];
+for(let i=0; i < N;i++){
+B.push(array[i]+1);
+}
+console.log(B.join(' '));
+};
+</pre>
+
+<h4>8.Pass or Fail</h4>
+
+<pre>
+const isAllPass = (N, Arr) => 
+{
+for(let i=0;i < N;i++){
+  if(Arr[i] < 32)
+      {
+        return "NO";
+      }
+    }
+    
+    return "YES";
+};
+</pre>
+
+<h4>9.Unique Color Shirt</h4>
+<pre>
+
+function Unique_Shirts (arr,N) {
+let count=0;
+
+for (let i = 0; i < arr.length-1;i++)
+
+{
+  
+  let repeat=false;
+  for(let j=i+1;j< arr.length;j++){
+    
+     if (arr[i]==arr[j])
+    {
+      arr[j]= 0;
+      repeat =true;
+    }
+    
+    
+  }
+  
+  if(repeat){
+    arr[i]=0;
+  }
+  
+  
+}
+
+for(let k=0;k < arr.length;k++){
+if(arr[k]>0)
+count=count+1;
+
+
+}
+return count;
+}
+
+
+
+</pre>
+
+
+<h4>10.Min and Max</h4>
+<pre>
+
+
+function arrayMin(arr){
+    let min=arr[0];
+     
+    for(let i=0;i < arr.length;i++) {
+      
+       if (arr[i] < min){
+         
+          min=arr[i];
+       }
+  
+  
+  
+    }
+    return min;
+  
+  }
+  
+  function arrayMax(arr) {
+    let max = arr[0];
+    for(let i=0;i< arr.length;i++) {
+      
+       if (arr[i]>max){
+         
+          max=arr[i];
+       }
+}
+    return max;
+}
+  
+</pre>
+
+
+<h4>11.Birthday Game</h4>
+<pre>
+    function Birthday_Game(arr,D ,M) {
+    let counter = 0;
+     for(let i = 0; i < arr.length - 1; i++){
+      let subArray = arr.slice(i, i+M);
+      if (subArray.length === M) {
+      let sum = subArray.reduce((a,b) => a + b, 0);
+      if(sum === D){
+      counter += 1;
+      }
+      }
+    }
+        return counter;
+    }
+</pre>
+<hr>
+
+
+<h1>Strings</h1>
+
+<h3>1.Count Characters</h3>
+     
+<pre>
+    const countCharacters = (S) => 
+   {
+
+    let arr=[0,0];
+    for(let i=0; i < S.length; i++){
+      if(S[i]=="A"){
+        arr[0]++;
+      }
+      else if(S[i]=="D"){
+        arr[1]++;
+      }
+      
+    }
+     return arr;
+ </pre>
+ 
+<h3>2.Count the Heads</h3>
+<pre>
+            
+let Count_Occ = (s) => 
+{
+  
+let sot = sortString(s);
+let emt=" ";
+
+for(let i=0;i< sot.length-1;)
+     
+ {
+    let  count=1,temp;
+    
+    for(j=i+1;j < sot.length;j++){
+      
+    if(sot[i]==sot[j]){
+        count++;
+        
+    }
+    else{
+    temp=j;
+    break;
+    }
+      
+    }
+    if(count>1){
+    emt=emt+sot[i]+count;
+    }
+    i=temp;
+   
+    }
+    
+  return emt;
+     
+};
+
+function sortString(s) {
+    return s.split('').sort().join('');
+};
+ 
+</pre>
+
+<h3>3.Count the Vowels</h3>
+
+<pre>
+var Count_Vowels= (S) => 
+{
+let count=0;
+let s= S.toLowerCase()
+for(let  i=0; i < s.length; i++){
+     
+if((s[i]=="a") || (s[i]=="e") || (s[i]=="i")  || (s[i]=="o" ) || (s[i]=="u" )){
+        
+  count++;
+}
+} 
+    return count;
+    };
+     
+</pre>
+    
+<h3>4.Concatenate the Strings</h3>
+<pre>
+var Concatenate_Strings = (S1, S2) => 
+    {
+      let S3 = S1.concat(S2);
+      return S3;  
+    };
+         
+</pre>
+    
+    
+    
+<h3>5.Find Length</h3>
+<pre>
+        
+const findLength = (s1) => 
+{
+ let s="abcdefghijklmnopqrstuvwxyz"
+let r=s1.toLowerCase()
+let count=0;
+for(let i=0;i < s.length;i++){
+for(let j=0;j < r.length;j++){
+if(s[i]==r[j]){
+count++
+    }
+    }
+}
+return count;
+
+};
+</pre>
+    
+<h3>6.Find the Winner</h3>
+<pre>
+       
+var Game_Winner = (s) => 
+{
+  
+    let c1=0; c2=0;
+    for(let i=0; i< S.length; i++){
+      if(S[i]=="A"){
+        c1++;
+      }
+      else{
+        c2++;
+      }
+    }
+    if(c1 > c2){
+      return "Aditya";
+    }
+    else if(c2>c1){
+      return "Danish";
+    }
+    else{
+      return "Draw";
+    } 
+};
+ 
+
+          
+      </pre>
+    
+      <h3>Q7.Join Strings</h3>
+      <pre>
+        
+const joinStrings = (S, P) => 
+{
+    let join = (S+P);
+    return join;
+};
+ 
+</pre>
+
+<h4>8.Plaindrome Check</h4>
+
+<pre>
+   
+     var Palin_Check = (str) =>
+     {
+        let str1 = "";
+        for( i=str.length-1; i>=0; i--){
+          str1+= str[i];
+        }
+        if(str1 === str)
+        return "True"
+        else 
+        return "False"
+	 
+};
+
+</pre>
+    
+<h3>9.Reverse the String</h3>
+<pre>
+
+var Reverse_String = (str) => 
+{
+    let s="";
+    for(let i=str.length-1; i>=0; i--){
+      s=s+str[i];
+    }
+    return s;
+};
+     
+</pre>
+
+
+<h3>10.Match the Strings</h3>
+<pre>
+   
+var String_Match = (s1,s2) => 
+{
+let flag=1;
+   
+for(let i=0;i < S1.length; i++){
+if(S1[i]!=S2[i]){
+flag=0;
+  }
+  }
+ if(flag==0){
+    return "NO";
+    }
+else{
+    return "YES";
+    }
+          
+};
+ </pre>
+
+<h3>11.String Replace</h3>
+<pre>
+    
+var Replace = (s, pattern , text) => 
+{
+    let result=s.replace(pattern,text);
+     return result;
+};
+ 
+
+</pre>
+
+<h3>12.Split the String</h3>
+<pre>
+
+var Split_the_string = (S) => 
+{
+ let x=S.split(' ');
+return x;
+};
+     
+</pre>
+
+<h3>13.Count the Vowels and Consonants</h3>
+<pre>
+
+var Count_Vowels= (s) => 
+{
+let countv=0;
+let res=s.toLowerCase();
+for(let i=0; i< res.length; i++){
+    
+if((res[i]=="a") || (res[i]=="e") || (res[i]=="i")  || (res[i]=="o" ) || (res[i]=="u" ))
+{
+    countv++;
+    }
+}
+    return countv;
+          
+};
+    
+var Count_Consonants=(s) = > 
+{
+let countn=0;
+let res=s.toLowerCase();
+for(let i=0; i < res.length; i++){
+if((res[i]!="a") && (res[i]!="e") && (res[i]!="i")  && (res[i]!="o" ) && (res[i]!="u" ))
+{
+countn++;
+}
+}
+return countn;
+           
+};
+     
+    
+
+</pre>
+<hr>
+
+
+<h1>Problem-solving </h1> 
+
+<h3>Q1.Find the Smaller Angle</h3>
+
+<pre>  
+        
+    var Minimal_Angle = (h, m) => 
+   {
+  
+   h=h%12;
+   hh=(h*360)/12 +(m*360)/(12*60);
+   mm=(m*360)/(60);
+   var angle =Math.abs(hh-mm);
+   if(angle>180){
+     angle=360-angle;
+   }
+   return angle;
+       
+  };
+
+</pre>
+
+<h4>Q2.Check whether the year is Leap year or not</h4>
+ 
+
+<pre>
+     
+var Check_Leap = (year) => 
+{
+ 
+  if(year%400==0)
+     return "Leap Year"
+  if (year % 100 == 0)
+     return "Non Leap Year";
+ 
+      
+  if (year % 4 == 0)
+      return "Leap Year ";
+  return "Non Leap Year";
+
+
+
+};
+</pre>
+
+<h4>Q3.Perfect Number Check.</h4>
+
+<pre>
+ 
+    var Perfect_Check = (N) => 
+    {
+   let sum = 0;
+   for(let i=1; i< N; i++){
+    if(N%i==0){
+        sum+=i;
+    }
+   }
+   if(sum==N)
+   return "YES";
+   else
+   return "NO"      
+    
+            
+    };
+    </pre>
+
+<h4>Q4.Reverse a Number</h4>
+
+<pre>
+     
+var Reverse_Number = (N) => 
+{
+  let a=[];
+  let r;
+  
+  while(N!=0){
+    
+    r=n%10
+    a.push(r);
+    N=parseInt(N/10);
+  }
+  
+  
+for(let i=0;i < a.length; i++){
+  if(a[i]==0)
+  {
+    a.splice(i,1);
+    i=i-1;
+
+  }
+  else{
+    break;
+  }
+
+}
+
+let result=a.join('')
+
+return result;
+};
+ 
+
+</pre>
+
+<h4>Q5.Substring Check.</h4>
+
+<pre>
+    
+var Substring_Check = (s1, s2) => 
+{
+  let str=s1.includes(s2);
+  
+  if(str){
+    return "YES";
+  }
+  else{
+    return "NO";
+  }
+     
+};
+ 
+</pre>
+<hr>
+
+
+
+
+
+<h1>Objects</h1> <br>
+
+<h3>1.Create a Function</h3>
+
+<pre>function Check(obj1){
+
+obj1.setter=function(){
+    console.log(this.name);
+    }
+       
+    }</pre>
+
+<h3>2.Delete a Property</h3>
+<pre>
+    function Check(obj1) {
+    obj1.rollno = 116,
+    obj1.name ="Utkarsh"
+              
+    let x=delete obj1.name;
+        return x;
+              
+              
+    }
+    </pre>
+
+<h3>3.Check whether the Package is Dream Package or not</h3>
+<pre>
+    function Check(obj1) {
+        if(obj1.salary>500000) {
+          return "Dream";
+        }
+        else{
+          return " NotDream"
+        }
+     }
+    </pre>
+<h3>4.Check whether the Object has a parameter or not</h3>
+<pre>
+function Check(obj1) {
+
+    let result= Object.keys(obj1).length;
+    if (result==0)
+        return false;
+        else
+        return true;
+        
+         
+      }
+      </pre>
+
+<h4>5.Merge the Objects</h4>
+<pre>
+        
+function Check(obj1,obj2) {
+    let result=Object.check(obj1,obj2)
+    return result;
+    }
+</pre>
+
+<h4>6.Object Multiplyer</h4>
+<pre>
+    function Check(a,obj1) {
+        obj1.id = obj1.id*a;
+        obj1.houseno = obj1.houseno*a;
+        return obj1;
+      }
+      
+    </pre>
+
+
+<h3>7.Find the  sum of Object Members</h3>
+<pre>
+        
+function Check(obj1) {
+    let x=obj1.p1;
+    let y=obj1.p2;
+    let z=obj1.p3;
+    let sum=x+y+z;
+    return sum;
+    }
+           
+           
+</pre>
+<h3>8.Check whether the Objects are same or not.</h3>
+<pre>
+function check(obj1,a,b) {
+    if((obj1.name==a)&&(obj1.id==b))
+    {
+        return true;
+   }
+    else{
+    return false;
+    }
+}
+        
+</pre>
+</body>
+</html>
